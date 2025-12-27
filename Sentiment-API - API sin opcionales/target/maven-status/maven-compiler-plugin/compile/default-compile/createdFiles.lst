@@ -1,0 +1,8 @@
+com\aluracursos\Sentiment_API\Sentiment\client\SentimentClient$DsRequest.class
+com\aluracursos\Sentiment_API\SentimentApiApplication.class
+com\aluracursos\Sentiment_API\Sentiment\DTO\SentimentRequest.class
+com\aluracursos\Sentiment_API\exception\GlobalExceptionHandler.class
+com\aluracursos\Sentiment_API\Sentiment\Controller\SentimentController.class
+com\aluracursos\Sentiment_API\Sentiment\client\SentimentClient.class
+com\aluracursos\Sentiment_API\Sentiment\DTO\ErrorResponse.class
+com\aluracursos\Sentiment_API\Sentiment\DTO\SentimentResponse.class

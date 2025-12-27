@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "Sentiment-API local",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Texto Positivo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"Me encanta este producto, es excelente y muy recomendable\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/sentiment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["sentiment"]
+        }
+      }
+    },
+    {
+      "name": "Texto Negativo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"El servicio fue pesimo, nunca mas voy a comprar aqui\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/sentiment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["sentiment"]
+        }
+      }
+    },
+    {
+      "name": "Texto Corto Inválido",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"text\": \"short\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/sentiment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["sentiment"]
+        }
+      }
+    }
+  ]
+}
